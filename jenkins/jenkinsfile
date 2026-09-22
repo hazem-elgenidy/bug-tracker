@@ -13,7 +13,7 @@ pipeline {
             }
                 steps {
                     dir('bugtracker-backend') {
-                        sh 'go test -v ./...'
+                        sh 'GOCACHE=/tmp/go-cache go test -v ./...'
                 }
         }
 
