@@ -8,6 +8,7 @@ pipeline {
                 image 'snakee/golang-junit:1.21 '
                 reuseNode true
             }
+        }
             steps {
                 dir('bug-tracker-backend') {
                     sh 'go test -v ./...'
